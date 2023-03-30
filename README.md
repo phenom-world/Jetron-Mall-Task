@@ -13,11 +13,11 @@ Building a full-stack application using NextJS, tRPC, TailwindCSS, and Prisma. T
 
 To get started with this project, you'll need to follow these steps:
 
-- Clone the repository: git clone <repository-url>
-- Install the dependencies: npm install
+- Clone the repository: ```git clone <repository-url>```
+- Install the dependencies: ```npm install```
 - Set up the database: update the env variable as added in the .env.example file
 - ```npx prisma migrate dev``` to run prisma migrations
-- Start the development server: npm run dev
+- Start the development server: ```npm run dev```
 
 ## Functionality
 The inventory management system has the following functionality:
