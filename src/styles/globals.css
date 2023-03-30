@@ -1,3 +1,77 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: IBM Plex Sans, Source Sans Pro;
+  background-color: #131720;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="file"]::file-selector-button {
+  transition: 0.1s;
+  background-color: #434e61 !important;
+  border-radius: 5px !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 5px 10px !important;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #434e61 !important;
+}
+
+input[type="file"] {
+  color: #b3b3b3 !important;
+}
+
+input::-ms-browse,
+input::-webkit-file-upload-button {
+  background-color: #434e61 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

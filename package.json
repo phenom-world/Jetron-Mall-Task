@@ -11,15 +11,21 @@
   },
   "dependencies": {
     "@prisma/client": "^4.11.0",
-    "@tanstack/react-query": "^4.28.0",
+    "@tanstack/react-query": "^4.20.2",
     "@trpc/client": "^10.18.0",
     "@trpc/next": "^10.18.0",
     "@trpc/react-query": "^10.18.0",
     "@trpc/server": "^10.18.0",
+    "formik": "^2.2.9",
     "next": "^13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-file-base64": "^1.0.3",
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.8.0",
+    "reactjs-popup": "^2.0.5",
     "superjson": "1.12.2",
+    "yup": "^1.0.2",
     "zod": "^3.21.4"
   },
   "devDependencies": {
