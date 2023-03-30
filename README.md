@@ -1,4 +1,4 @@
-## Jetron Mall 2023 Q1 Fullstack Developer Take Home Assignment
+## Jetron Mall 2023 Fullstack Developer Task
 
 Building a full-stack application using NextJS, tRPC, TailwindCSS, and Prisma. The application is a simple inventory management system that allows users to create, update, delete, and view products.
 
@@ -32,45 +32,19 @@ The inventory management system has the following functionality:
 ## Database Structure
 The database structure for the product table includes the following fields:
 
+```
 id (ID) - The unique identifier for the product.
 name (String) - The name of the product.
 description (String) - A description of the product.
-isHidden (Boolean) - Whether the product should be hidden or not.
+hidden (Boolean) - Whether the product should be hidden or not.
+category (String) - The category of the product.
+description (String) - The Description of the product.
 createdAt (Date) - The date and time that the product was created.
+updatedAt (Date) - The date and time that the product was updated.
+```
 
 ## Project Structure
 The project has the following file structure:
-
-├── components
-│ ├── Layout.tsx
-│ ├── ProductForm.tsx
-│ ├── ProductList.tsx
-│ └── ProductListItem.tsx
-├── pages
-│ ├── api
-│ │ └── products.ts
-│ ├── product
-│ │ ├── [id].tsx
-│ │ └── index.tsx
-│ └── index.tsx
-├── prisma
-│ ├── schema.prisma
-│ └── seeds.ts
-├── styles
-│ ├── globals.css
-│ └── tailwind.css
-├── trpc
-│ ├── client.ts
-│ └── server.ts
-├── types
-│ └── prisma.ts
-├── .env
-├── .env.example
-├── .gitignore
-├── docker-compose.yml
-├── package-lock.json
-├── package.json
-└── README.md
 
 - components: Contains reusable React components that are used throughout the application.
 - pages: Contains the NextJS pages that make up the user interface.
